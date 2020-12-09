@@ -8,7 +8,7 @@
 		var started = false, canvas, context;
 
 		function init() {
-			canvas = document.getElementById("canvas”);
+			canvas = document.getElementById("canvas");
 			context = canvas.getContext("2d");
 
 			canvas.addEventListener("mousemove", moveHandler, false);
@@ -20,10 +20,10 @@
 		function getCoords(e) {
 			var x, у;
 
-			if (e.layerX || e.layerX 0) { // Firefox
+			if (e.layerX || e.layerX ) { // Firefox
 				x = e.layerX;
 				у = e.layerY;
-			} else if (e.offsetX || e.offsetX -- 0) {
+			} else if (e.offsetX || e.offsetX -- ) {
 				x = e.offsetX;
 				у = e.offsetY;
 			}
