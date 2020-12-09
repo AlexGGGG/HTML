@@ -19,10 +19,10 @@
 
 			function draw() {
 				// очистка всего полотна.
-				context.clearRect(0, 0, context.canvas.widths context.canvas.height);
+				context.clearRect(0, 0, context.canvas.width, context.canvas.height);
 
-				var x - $("X").value;
-				var у - $("Y").value;
+				var x = $("X").value;
+				var у = $("Y").value;
 
 				// сохранение состояния полотна и начала системы координат.
 				context.save();
@@ -35,7 +35,7 @@
 		}
 
 		if (window.addEventListener)
-			window.addEventListener("load”, loadhandler, true);
+			window.addEventListener("load", loadHandler, true);
 	</script>
 </head>
 <body>

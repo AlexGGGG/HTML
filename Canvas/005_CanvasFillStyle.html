@@ -6,7 +6,7 @@
 <script>
 	function draw() {
 		// проверка поддержки элемента canvas в браузере.
-		if (’Modernizr.canvas) return;
+		if (!Modernizr.canvas) return;
 
 		// получение элемента и его графического контекста.
 		var canvas = document.getElenentById("canvas");

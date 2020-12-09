@@ -5,7 +5,7 @@
 	<script src="Modernizr-2.0.6.js"></script>
 	<script>
 		function draw() {
-			if (IModernizr.canvas) return;
+			if (!Modernizr.canvas) return;
 
 		var canvas = document.getElementById("canvas");
 		var context = canvas.getContext("2d");

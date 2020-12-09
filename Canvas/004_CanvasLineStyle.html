@@ -6,7 +6,7 @@
 	<script>
 		function draw() {
 		// проверка поддержки элемента canvas в браузере.
-		if (IModernizr.canvas) return;
+		if (!Modernizr.canvas) return;
 
 		// получение элемента и его графического контекста.
 		var canvas = document.getElementById("canvas");
@@ -25,8 +25,8 @@
 
 		// настройка стилей линии.
 		context.lineWidth = 8;
-		context.strokestyle » "green";
-		context.linejoin = "bevel”;
+		context.strokestyle = "green";
+		context.linejoin = "bevel";
 		context.stroke();
 
 		// восстанавливаем прежнее состояние контекста.

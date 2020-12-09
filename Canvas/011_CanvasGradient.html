@@ -7,14 +7,14 @@
 		function draw() {
 		if (!Modernizr.canvas) return;
 
-		var canvas = document.getElementBy!d("canvas");
+		var canvas = document.getElementById("canvas");
 		var context = canvas.getContext("2d");
 
 		// Создание объекта градиента и указание начальной и конечной точки оси градиента.
 		var gradient = context.createLinearGradient(0, 0, 0, 300);
 
 		// Добавление цвета и смещения позиции остановки цвета.
-		gradient.addColorStop(0, "Blue”);
+		gradient.addColorStop(0, "Blue");
 
 		// Добавление цвета и смещения позиции остановки цвета.
 		gradient.addColorStop(0.5, "LightBlue");
