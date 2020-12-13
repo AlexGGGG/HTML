@@ -1,12 +1,12 @@
 1	<!DOCTYPE html>
 <html>
 <head>
-	<title Canvas</title>
-	<script src-"Modernizr-2.0.6.js" type="text/javascript"x/script>
+	<title>Canvas</title>
+	<script src="Modernizr-2.0.6.js" type="text/javascript"x/script>
 	<script>
 		function draw() {
 		// проверка поддержки элемента canvas в браузере.
-		if (IModernizr.canvas) return;
+		if (!Modernizr.canvas) return;
 
 		// получение элемента и его графического контекста.
 		var canvas = document.getElementById("canvas");
